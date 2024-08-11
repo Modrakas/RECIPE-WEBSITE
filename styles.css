@@ -113,10 +113,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 7%;
+  margin-top: 6%;
   padding-bottom: 3%;
   border-bottom: .05em solid black;
-  border: 1px solid black;
 }
 
 .nav__link {
@@ -131,7 +130,6 @@ img {
 .home__container {
   margin-top: 12%;
   padding-top: 2rem;
-  border: 1px solid black;
 }
 
 .home__name {
