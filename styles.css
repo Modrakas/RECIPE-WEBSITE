@@ -1,0 +1,163 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Font and typography ==========*/
+  --nav-font: "Fira Sans", sans-serif;
+  --title-font: "El Messiri", sans-serif;
+
+  --biggest-font-size: 2.1rem;
+  --h1-font-size: 1.56rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .8rem;
+  --smaller-font-size: .5rem;
+
+  /*========== Font weight ==========*/
+  --font-xthin: 200;
+  --font-thin: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+ /*========== Colors ==========*/
+  --body-color: hsl(0, 0%, 97%);
+  --black-color: hsl(0, 0%, 3%);
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+h2, h4 {
+  font-family: var(--title-font);
+  font-size: var(--smaller-font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-thin);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  padding-bottom: 3%;
+  border-bottom: .05em solid black;
+  border: 1px solid black;
+}
+
+.nav__link {
+  position: relative;
+  color: var(--text-color-light);
+  font-size: var(--h3-font-size);
+  font-family: var(--nav-font);
+  font-weight: var(--font-thin);
+}
+
+/*=============== HOME ===============*/
+.home__container {
+  margin-top: 12%;
+  padding-top: 2rem;
+  border: 1px solid black;
+}
+
+.home__name {
+  font-size: var(--h1-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-thin);
+  text-align: center;
+}
+
+.home__name-sub {
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr;
+  margin-top: -2%;
+  margin-bottom: 10%;
+}
+
+.home__b-year {
+  justify-content: end;
+}
+
+.home__sub {
+  display: flex;
+  justify-content: center;
+  padding-top: .5%;
+}
+
+.home__d-year {
+  justify-content: start;
+}
