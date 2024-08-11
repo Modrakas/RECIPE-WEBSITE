@@ -27,7 +27,7 @@
 
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
-  --h2-font-size: 1.17rem;
+  --h2-font-size: 1.65rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -78,7 +78,7 @@ body {
 }
 
 h1 {
-  font-size: var(--h1-font-size)
+  font-size: var(--h2-font-size)
 }
 
 h2, h4 {
