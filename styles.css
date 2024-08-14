@@ -1,13 +1,14 @@
 /*=============== GOOGLE FONTS ===============*/
 @font-face { 
-  font-family: 'MaginiaRegular'; 
-  src: url(font/MaginiaRegular-BWP6x.woff) 
+  font-family: 'LibreBaskerville'; 
+  src: url(font/LibreBaskerville-Italic.woff) 
 }
 
 @font-face { 
   font-family: 'Goldplay-Regular'; 
   src: url(font/Goldplay-Regular.woff) 
 }
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
